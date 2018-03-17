@@ -1,113 +1,131 @@
 <?php
-$berline = array(
-    'honda'=>array(
-        'model'=>"accord",
-        'image'=>"accord.jpg",
+$category = array(
+    '1' => 'berline',
+    '2' => 'hatchback',
+    '3' => 'suv',
+);
+
+$product = array(
+    '11' => array(
+        'model' => "Honda",
+        'category' => '1',
+        'image' => "accord.jpg",
         'km' => '140.000km',
-        'annee' =>'2014',
-        'prix'=>'20900$',
+        'annee' => '2014',
+        'prix' => '20900$',
     ),
-    'mercedes'=>array(
-        'model'=>"c203",
-        'image'=>"c203.jpg",
+    '12' => array(
+        'model' => "mercedes",
+        'category' => '1',
+        'image' => "c203.jpg",
         'km' => '100.000km',
-        'annee' =>'2010',
-        'prix'=>'19900$',
+        'annee' => '2010',
+        'prix' => '19900$',
     ),
-    'toyota'=>array(
-        'model'=>"corola",
-        'image'=>"corola.jpg",
+    '13' => array(
+        'model' => "toyota corola",
+        'category' => '1',
+        'image' => "corola.jpg",
         'km' => '100.000km',
-        'annee' =>'2010',
-        'prix'=>'19900$',
+        'annee' => '2010',
+        'prix' => '19900$',
     ),
-    'hyunday'=>array(
-    'model'=>"elentra",
-    'image'=>"elentra.jpg",
-    'km' => '100.000km',
-    'annee' =>'2008',
-    'prix'=>'9900$',
+    '14' => array(
+        'model' => "hyunday elentra",
+        'category' => '1',
+        'image' => "elentra.jpg",
+        'km' => '100.000km',
+        'annee' => '2008',
+        'prix' => '9900$',
     ),
-    'kia'=>array(
-        'model'=>"forte",
-        'image'=>"forte.jpg",
+    '15' => array(
+        'model' => "kia forte",
+        'category' => '1',
+        'image' => "forte.jpg",
         'km' => '101.000km',
-        'annee' =>'2013',
-        'prix'=>'23900$',
-    )
-);
-$hatchback = array(
-    'honda'=>array(
-        'model'=>"civic",
-        'image'=>"civic.jpg",
+        'annee' => '2013',
+        'prix' => '23900$',
+    ),
+
+    '112' => array(
+        'model' => "honda civic",
+        'category' => '2',
+        'image' => "civic.jpg",
         'km' => '115.000km',
-        'annee' =>'2011',
-        'prix'=>'10900$',
+        'annee' => '2011',
+        'prix' => '10900$',
     ),
-    'mercedes'=>array(
-        'model'=>"class a",
-        'image'=>"classa.jpg",
+    '122' => array(
+        'model' => "mercedes class a",
+        'category' => '2',
+        'image' => "classa.jpg",
         'km' => '125.000km',
-        'annee' =>'2013',
-        'prix'=>'24900$',
+        'annee' => '2013',
+        'prix' => '24900$',
     ),
-    'toyota'=>array(
-        'model'=>"auris",
-        'image'=>"auris.jpg",
+    '132' => array(
+        'model' => "toyota auris",
+        'category' => '2',
+        'image' => "auris.jpg",
         'km' => '140.000km',
-        'annee' =>'2009',
-        'prix'=>'10900$',
+        'annee' => '2009',
+        'prix' => '10900$',
     ),
-    'hyunday'=>array(
-        'model'=>"accent",
-        'image'=>"accent.jpg",
+    '142' => array(
+        'model' => "hyunday accent",
+        'category' => '2',
+        'image' => "accent.jpg",
         'km' => '118.000km',
-        'annee' =>'2008',
-        'prix'=>'7400$',
+        'annee' => '2008',
+        'prix' => '7400$',
     ),
-    'kia'=>array(
-        'model'=>"rio",
-        'image'=>"rio.jgg",
+    '152' => array(
+        'model' => " kia rio",
+        'category' => '2',
+        'image' => "rio.jgg",
         'km' => '112.000km',
-        'annee' =>'2008',
-        'prix'=>'6900$',
-    )
-);
-$suv = array(
-    'honda'=>array(
-        'model'=>"crv",
-        'image'=>"crv.jpg",
+        'annee' => '2008',
+        'prix' => '6900$',
+    ),
+    '113' => array(
+        'model' => "honda crv",
+        'category' => '3',
+        'image' => "crv.jpg",
         'km' => '135.000km',
-        'annee' =>'2013',
-        'prix'=>'13900$',
+        'annee' => '2013',
+        'prix' => '13900$',
     ),
-    'mercedes'=>array(
-        'model'=>"glk",
-        'image'=>"glk.jpg",
+    '123' => array(
+        'model' => "mercedes glk",
+        'category' => '3',
+        'image' => "glk.jpg",
         'km' => '125.000km',
-        'annee' =>'2015',
-        'prix'=>'29900$',
+        'annee' => '2015',
+        'prix' => '29900$',
     ),
-    'toyota'=>array(
-        'model'=>"rav4",
-        'image'=>"rav4.jpg",
+    '133' => array(
+        'model' => "toyota rav4",
+        'category' => '3',
+        'image' => "rav4.jpg",
         'km' => '160.000km',
-        'annee' =>'2009',
-        'prix'=>'14900$',
+        'annee' => '2009',
+        'prix' => '14900$',
     ),
-    'hyunday'=>array(
-        'model'=>"tucson",
-        'image'=>"tucson.jpg",
+    '143' => array(
+        'model' => "hyunday tucson",
+        'category' => '3',
+        'image' => "tucson.jpg",
         'km' => '110.000km',
-        'annee' =>'2012',
-        'prix'=>'11900$',
+        'annee' => '2012',
+        'prix' => '11900$',
     ),
-    'kia'=>array(
-        'model'=>"sol",
-        'image'=>"soul.jpg",
+    '153' => array(
+        'model' => "kia sol",
+        'category' => '3',
+        'image' => "soul.jpg",
         'km' => '119.000km',
-        'annee' =>'2011',
-        'prix'=>'11900$',
+        'annee' => '2011',
+        'prix' => '11900$',
     )
 );
 
