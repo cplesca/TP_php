@@ -14,6 +14,7 @@ $product = array(
         'annee' => '2014',
         'prix' => '20900$',
     ),
+
     '12' => array(
         'model' => "mercedes",
         'category' => '1',
