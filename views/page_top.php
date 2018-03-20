@@ -20,7 +20,8 @@ require_once (dirname(__FILE__) . '/../defines.php');
 </head>
 <body>
 
+
 <header>
-    <img src="images/logo.png" alt="logo de l'entreprise" >
+    <img id="logo" src="images/logo.png" alt="logo de l'entreprise" >
     <?php require('menu.php'); ?>
 </header>
