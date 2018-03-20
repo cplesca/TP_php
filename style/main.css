@@ -79,6 +79,7 @@ header img:hover{
 	display:block;
 	text-decoration: none;
 	padding:10px 10px;
+	border-bottom: 2px solid #fff;
 }
 #main-menu a:hover{
 	color:#619ebc !important;
