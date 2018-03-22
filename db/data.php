@@ -1,8 +1,8 @@
 <?php
 $category = array(
-    '1' => 'berline',
-    '2' => 'hatchback',
-    '3' => 'suv',
+    '1' => 'Berline',
+    '2' => 'Hatchback',
+    '3' => 'Suv',
 );
 
 $product = array(
