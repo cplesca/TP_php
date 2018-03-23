@@ -1,5 +1,6 @@
 <?php
 define('CHECKED_ATTR',          'checked="checked"');
+define('SELECTED_ATTR',          'selected="selected"');
 const PAGE_NAME = 'Contact';
 require_once('views/page_top.php');
 
@@ -129,10 +130,9 @@ if ($en_post) {
                                     }
                                     ?>
                                 </label>
-                                <input type="text" name="store" id="store" list="options-store">
-                                <datalist id="options-store">
+                                <select type="text" name="store" id="options-store">
                                     <option value="-1"
-                                        <?= array_key_exists('store', $_POST)&& $_POST['store']=== '-1' ? SELECTED_ATTR:''  ?>
+                                        <?= array_key_exists('store', $_POST)&& $_POST['store']=== 'Choisir' ? SELECTED_ATTR:''  ?>
                                     >Choisir...</option>
                                     <option value="Montreal Downtown"
                                         <?= array_key_exists('store', $_POST)&& $_POST['store']=== 'Montreal downtown, QC' ? SELECTED_ATTR:''  ?>
@@ -146,7 +146,7 @@ if ($en_post) {
                                     <option value="Verdum"
                                         <?= array_key_exists('store', $_POST)&& $_POST['store']=== 'Verdum, QC' ? SELECTED_ATTR:''  ?>
                                     >Verdum, QC</option>
-                                </datalist>
+                                </select>
                             </div>
                         </fieldset>
                         <fieldset id="field2">
