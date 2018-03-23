@@ -9,12 +9,12 @@ $validation = array(
     'firstname' => array(
         'is_valid' => false,
         'value' => null,
-        'err_msg' => 'First Name have at lent 2 champs',
+        'err_msg' => 'Le prenom doit contenir au moins 2 caractères',
     ),
     'lastname' => array(
         'is_valid' => false,
         'value' => null,
-        'err_msg' => 'First Name have at lent 2 champs',
+        'err_msg' => 'Le nom doit contenir au moins 2 caractères',
     ),
     'email' => array(
         'is_valid' => false,
@@ -34,7 +34,7 @@ $validation = array(
     'message' => array(
         'is_valid' => false,
         'value' => null,
-        'err_msg' => 'Le message doit avoir 10 character',
+        'err_msg' => 'Le message doit contenir au moins 10 caractères',
     ),
 
 );
@@ -86,7 +86,7 @@ if ($en_post) {
                     <div id="filds">
                         <fieldset>
                             <div>
-                                <label for="firstname">Firstname</label>
+                                <label for="firstname">Prénom</label>
                                 <input type="text" name="firstname" id="firstname" placeholder="Prénom"
                                        class="<?= $en_post && !$validation['firstname']['is_valid'] ? 'invalid' : '' ?>"
                                        value="<?= $en_post ? $validation['firstname']['value'] : '' ?>"
@@ -98,7 +98,7 @@ if ($en_post) {
                                 ?>
                             </div>
                             <div>
-                                <label for="lastname">Lastname</label>
+                                <label for="lastname">Nom</label>
                                 <input type="text" name="lastname" id="lastname" placeholder="Nom"
                                        class="<?= $en_post && !$validation['lastname']['is_valid'] ? 'invalid' : '' ?>"
                                        value="<?= $en_post ? $validation['lastname']['value'] : '' ?>"
@@ -111,7 +111,7 @@ if ($en_post) {
                                 ?>
                             </div>
                             <div>
-                                <label for="email">Email</label>
+                                <label for="email">Courriel</label>
                                 <input type="text" name="email" id="email" placeholder="Courriel"
                                        class="<?= $en_post && !$validation['email']['is_valid'] ? 'invalid' : '' ?>"
                                        value="<?= $en_post ? $validation['email']['value'] : '' ?>"
