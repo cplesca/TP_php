@@ -18,7 +18,7 @@ require_once (dirname(__FILE__) . '/../defines.php');
     </nav>
     <div>
         <figure>
-            <a href="login.php" id="logo"><img src="images/loginicon.png" alt="se connecter"/> <figcaption>Se connecter</figcaption></a>
+            <a href="login.php" id="logo"><img src="images/loginicon.png" alt="se connecter"/></a>
 
         </figure>
     </div>
