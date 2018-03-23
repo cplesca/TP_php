@@ -29,7 +29,7 @@ $validation = array(
     'store' => array(
         'is_valid' => false,
         'value' => null,
-        'err_msg' => 'choisir un lang',
+        'err_msg' => 'choisir une succursale',
     ),
     'message' => array(
         'is_valid' => false,
@@ -86,54 +86,54 @@ if ($en_post) {
                     <div id="filds">
                         <fieldset>
                             <div>
-                                <label for="firstname">Prénom</label>
-                                <input type="text" name="firstname" id="firstname" placeholder="Prénom"
+                                <label for="firstname">Prénom</label><?php
+                                if ($en_post && !$validation['firstname']['is_valid']) {
+                                    echo '<span id="errmsg">', $validation['firstname']['err_msg'], '</span>';
+                                }
+                                ?>
+                                <input type="text" name="firstname" id="firstname" placeholder="Philip"
                                        class="<?= $en_post && !$validation['firstname']['is_valid'] ? 'invalid' : '' ?>"
                                        value="<?= $en_post ? $validation['firstname']['value'] : '' ?>"
                                 />
-                                <?php
-                                if ($en_post && !$validation['firstname']['is_valid']) {
-                                    echo '<span>', $validation['firstname']['err_msg'], '</span>';
-                                }
-                                ?>
+
                             </div>
                             <div>
-                                <label for="lastname">Nom</label>
-                                <input type="text" name="lastname" id="lastname" placeholder="Nom"
+                                <label for="lastname">Nom</label><?php
+                                if ($en_post && !$validation['lastname']['is_valid']) {
+                                    echo '<span id="errmsg">', $validation['lastname']['err_msg'], '</span>';
+                                }
+                                ?>
+                                <input type="text" name="lastname" id="lastname" placeholder="Green"
                                        class="<?= $en_post && !$validation['lastname']['is_valid'] ? 'invalid' : '' ?>"
                                        value="<?= $en_post ? $validation['lastname']['value'] : '' ?>"
                                 />
                                 <br>
-                                <?php
-                                if ($en_post && !$validation['lastname']['is_valid']) {
-                                    echo '<span>', $validation['lastname']['err_msg'], '</span>';
-                                }
-                                ?>
+
                             </div>
                             <div>
-                                <label for="email">Courriel</label>
-                                <input type="text" name="email" id="email" placeholder="Courriel"
+                                <label for="email">Courriel</label><?php
+                                if ($en_post && !$validation['email']['is_valid']) {
+                                    echo '<span id="errmsg">', $validation['email']['err_msg'], '</span>';
+                                }
+                                ?>
+                                <input type="text" name="email" id="email" placeholder="exemple@exemple.com"
                                        class="<?= $en_post && !$validation['email']['is_valid'] ? 'invalid' : '' ?>"
                                        value="<?= $en_post ? $validation['email']['value'] : '' ?>"
                                 />
                                 <br>
-                                <?php
-                                if ($en_post && !$validation['email']['is_valid']) {
-                                    echo '<span>', $validation['email']['err_msg'], '</span>';
-                                }
-                                ?>
+
                             </div>
                             <div>
-                                <label for="store">Sélectionnez votre magasin:  <?php
-                                    if ($en_post && !$validation['store']['is_valid']) {
-                                        echo '<span>', $validation['store']['err_msg'], '</span>';
-                                    }
-                                    ?>
-                                </label>
+                                <label for="store">Sélectionnez votre magasin: </label> <?php
+                                if ($en_post && !$validation['store']['value']) {
+                                    echo '<span id="errmsg">', $validation['store']['err_msg'], '</span>';
+                                }
+                                ?>
+
                                 <select type="text" name="store" id="options-store">
                                     <option value="-1"
-                                        <?= array_key_exists('store', $_POST)&& $_POST['store']=== 'Choisir' ? SELECTED_ATTR:''  ?>
-                                    >Choisir...</option>
+                                        <?= array_key_exists('store', $_POST)&& $_POST['store']=== '' ? SELECTED_ATTR:''  ?>
+                                    ></option>
                                     <option value="Montreal Downtown"
                                         <?= array_key_exists('store', $_POST)&& $_POST['store']=== 'Montreal downtown, QC' ? SELECTED_ATTR:''  ?>
                                     >Montreal downtown, QC</option>
@@ -150,44 +150,44 @@ if ($en_post) {
                             </div>
                         </fieldset>
                         <fieldset id="field2">
-                            <label>Langue:
-                                <?php
-                                if ($en_post && !$validation['radio']['is_valid']) {
-                                    echo '<span>', $validation['radio']['err_msg'], '</span>';
-                                }
-                                ?></label>
+                            <label>Langue: </label>
+                            <?php
+                            if ($en_post && !$validation['radio']['is_valid']) {
+                                echo '<span id="errmsg">', $validation['radio']['err_msg'], '</span>';
+                            }
+                            ?>
                             <div class="clearfix labpad">
-                            <label class="radioform">Français
-                            <input type="radio" id="radio_1" name="radio" value="fr"
-                            <?= array_key_exists('radio', $_POST) && $_POST['radio'] === 'fr' ? CHECKED_ATTR : '' ?>
-                                />
-                                <span class="radiocheckmark"></span>
-                            </label>
-                            <label class="radioform">Anglais
-                            <input type="radio" id="radio_2" name="radio" value="en"
-                            <?= array_key_exists('radio', $_POST) && $_POST['radio'] === 'en' ? CHECKED_ATTR : '' ?>
-                                />
-                                <span class="radiocheckmark"></span>
-                            </label>
-                        </div>
-                            <label>Votre message: </label>
-                        <div class="labpad">
-									<textarea name="message" rows="5" cols="35"
-                                        <?php
-                                        if ($en_post && ! $validation['message']['is_valid'] ) {
-                                            echo "<p>",$validation['message']['err_msg'],"</p>";
-                                        }
-                                        ?>
-                                    ></textarea>
-                        </div>
-                        <div id="checkform">
-                            <label class="checkboxes">Je souhaite recevoir courriel de confirmation.
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            </fieldset>
-                        </div>
-                        <input type="submit" name="submit" value="Soumettre"/>
+                                <label class="radioform">Français
+                                    <input type="radio" id="radio_1" name="radio" value="fr"
+                                        <?= array_key_exists('radio', $_POST) && $_POST['radio'] === 'fr' ? CHECKED_ATTR : '' ?>
+                                    />
+                                    <span class="radiocheckmark"></span>
+                                </label>
+                                <label class="radioform">Anglais
+                                    <input type="radio" id="radio_2" name="radio" value="en"
+                                        <?= array_key_exists('radio', $_POST) && $_POST['radio'] === 'en' ? CHECKED_ATTR : '' ?>
+                                    />
+                                    <span class="radiocheckmark"></span>
+                                </label>
+                            </div>
+                            <label>Votre message: </label><?php
+                            if ($en_post && ! $validation['message']['is_valid'] ) {
+                                echo "<<span id=\"errmsg\">>",$validation['message']['err_msg'],"</span>";
+                            }
+                            ?>
+                            <div class="labpad">
+									<textarea name="message" rows="5" cols="35" placeholder="">
+
+                                    </textarea>
+                            </div>
+                            <div id="checkform">
+                                <label class="checkboxes">Je souhaite recevoir courriel de confirmation.
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                        </fieldset>
+                    </div>
+                    <input type="submit" name="submit" value="Soumettre"/>
                 </form>
             </div>
         </div>
