@@ -17,8 +17,18 @@
     </div>
 
     <?php } else { ?>
-        <form method="post" name="logout">
-            <input type="submit" name="logout_submit" value="Se déconnecter"/>
-        </form>
+
+        <div id="formdiv">
+            <div id="filds">
+                <h2>Liste d'envies:</h2>
+                <ul>
+                    <li>EX: Equinox</li>
+                </ul>
+                <form method="post" name="logout">
+                    <input id="btnconnecter" type="submit" name="logout_submit" value="Se déconnecter"/>
+                </form>
+            </div>
+        </div>
+
     <?php } ?>
 </div>
