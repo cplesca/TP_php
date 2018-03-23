@@ -25,21 +25,21 @@ require_once('views/page_top.php');
         <div class="row produtos">
             <div class="col-4">
                 <h2>Voiture Berline</h2>
-                <img src="images/berline.jpg" alt="Xbox one Product Photo">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                <a href="catalogue.html">Shop now</a>
+                <a href="catalogueb.php">Shop now<img src="images/berline.jpg" alt="Xbox one Product Photo">
+                </a>
             </div>
             <div class="col-4" >
                 <h2>Hatchback</h2>
                 <img src="images/v-hatchback.jpg" alt="Tablet Product Photo">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                <a href="catalogue.html">Shop now</a>
+                <a href="catalogueh.php">Shop now</a>
             </div>
             <div class="col-4" >
                 <h2>VUS</h2>
                 <img src="images/v-vus.jpg" alt="Iphone 8 Product Photo">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                <a href="catalogue.html">Shop now</a>
+                <a href="cataloguev.php">Shop now</a>
             </div>
         </div>
     </main>
