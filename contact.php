@@ -68,7 +68,7 @@ if ($en_post) {
         && $validation['message']['is_valid'];
 
     if ($form_valid) {
-        header('Location: emailreceived .php?msg=' . urlencode('Merci, vous êtes inscrits sur le site'));
+        header('Location: emailreceived.php?msg=' . urlencode('Merci, vous êtes inscrits sur le site'));
         exit;
     }
 
