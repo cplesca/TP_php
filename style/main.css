@@ -70,8 +70,9 @@ header{
 }
 
 #main-menu ul{
+    margin-left: 70px;
 	overflow:hidden;
-}
+    }
 
 #main-menu li{
 	width: 200px;
