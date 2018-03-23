@@ -5,9 +5,9 @@
     <div id="divfoot">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="catalogue.php">Products</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
             </ul>
         </nav>
         <div id="socialmediafoot" class="row">
