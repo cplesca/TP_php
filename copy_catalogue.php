@@ -1,30 +1,17 @@
 <?php
-require_once 'db/data.php';
-
-?>
-<?php
 const PAGE_NAME = 'Catalogue';
 require_once('views/page_top.php');
 ?>
     <main>
         <h1>Catalogue</h1>
         <div class="row produtos2">
-            <div class="col-4" class="row produtos2">
-
-                <?php
-
-                foreach($category as $cle1 => $valeur1)
-                {
-                    echo "categorie:" . $cle1 . "<br />";
-
-                    foreach ($valeur1 as $cle2=>$valeur2)
-                    {
-                        echo  $valeur2 . "<br />\n";
-                    }
-                }
-                ?>
-
-               <!----- <form action="/action_page.php" method="get">
+            <div class="col-4">
+                <h2>Mercedes</h2>
+                <figure>
+                    <img src="images/mb1.jpg" alt="page-detail1"></a>
+                    <figcaption>Á partir de 25000$</figcaption>
+                </figure>
+                <form action="/action_page.php" method="get">
                     <fieldset>
                         <legend>Choisissez vos options:</legend>
                         <input type="checkbox" name="sieges" value="Bike">Sieges chaufants<br>
@@ -123,6 +110,6 @@ require_once('views/page_top.php');
                 </form>
             </div>
         </div>
-    </main>--->
+    </main>
 
 <?php require_once('views/page_bottom.php'); ?>
