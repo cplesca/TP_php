@@ -64,7 +64,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-	margin-top: 20px;
 }
 #main-menu{
 	margin:auto;
@@ -125,6 +124,75 @@ h1{
 	color:#fff;
 }
 
+
+/*video*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+.container {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.banner {
+	margin: -24px -24px 0 -24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	position: relative;
+	overflow: hidden;
+	min-height: 70vh;
+	background: black;
+	color: white;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+
+.video-container .video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-height: 100%;
+	min-width: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.video-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	background: black;
+	opacity: 0.5;
+}
+
+.banner-content {
+	position: relative;
+	height: 100%;
+}
+
+//Hide Video on smaller screens to reduce bandwidth usage
+@media only screen and (max-width: 600px) {
+	.video-container .video {
+		display: none;
+	}
+	.banner {
+		font-size: 24px;
+	}
+}
+
 main img{
 	width:100%;
 }
@@ -133,6 +201,7 @@ main img{
 	background-color: rgba(242, 242, 242,0.4);
 	margin-bottom: 30px;
     padding: 30px 0 30px;
+	margin-top: 50px;
 }
 
 .produtos h2{

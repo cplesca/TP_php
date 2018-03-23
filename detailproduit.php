@@ -5,6 +5,7 @@ require_once('views/page_top.php');
 
     <main>
         <h1>Detail du Produit</h1>
+
         <div class="dprod">
             <div class="img-detail">
                 <img  src="images/mb-detail.png" alt="page-detail">

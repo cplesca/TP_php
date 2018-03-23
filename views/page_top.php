@@ -10,7 +10,8 @@ require_once (dirname(__FILE__) . '/../defines.php');
     <title><?= SITE_NAME ?> - <?= PAGE_NAME ?></title>
     <link rel="stylesheet" href="style/main.css" charset="utf-8"/>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script/main.js"></script>
     <!--
         commentaire conditionnel pour rendre compatible les nouvelles balises structurantes de HTML5
     -->
