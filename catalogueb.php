@@ -1,11 +1,9 @@
 <?php
 require_once 'db/data.php';
-
-?>
-<?php
 const PAGE_NAME = 'Catalogue';
 require_once('views/page_top.php');
 ?>
+
     <main>
     <h1>Catalogue</h1>
     <div class="row produtos2">
@@ -14,7 +12,7 @@ require_once('views/page_top.php');
 <?php
 
 
-    echo "Categorie Berline:". "<br />";
+    echo "<h2> Categorie Berline: </h2>". "<br />";
 
     foreach ($category['BERLINE'] as $cle2=>$valeur2)
     {

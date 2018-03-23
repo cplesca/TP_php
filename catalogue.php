@@ -15,7 +15,7 @@ require_once('views/page_top.php');
 
                 foreach($category as $cle1 => $valeur1)
                 {
-                    echo "categorie:" . $cle1 . "<br />";
+                    echo "<h2>Categorie: " . $cle1 . "</h2><br />";
 
                     foreach ($valeur1 as $cle2=>$valeur2)
                     {

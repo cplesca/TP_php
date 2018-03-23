@@ -126,15 +126,10 @@ h1{
 
 
 /*video*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-body {
-	margin: 0;
-	font-family: "Open Sans";
-}
-
 .container {
 	padding-top: 20px;
 	padding-bottom: 50px;
+	overflow: hidden;
 }
 
 .banner {
@@ -183,7 +178,6 @@ body {
 	height: 100%;
 }
 
-//Hide Video on smaller screens to reduce bandwidth usage
 @media only screen and (max-width: 600px) {
 	.video-container .video {
 		display: none;
@@ -217,18 +211,19 @@ main img{
 
 .produtos a{
 	text-decoration:none;
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-	padding: 15px 10px;
-	text-align:center;
-	background-color:rgb(97, 158, 188);
-	color:#fff;
-	cursor: pointer;
-    -webkit-transition-duration: 0.7ms;
-         -o-transition-duration: 0.7ms;
-            transition-duration: 0.7ms;
-	min-width: 94px;
+	color: #262626;
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*height: 50px;*/
+	/*padding: 15px 10px;*/
+	/*text-align:center;*/
+	/*background-color:rgb(97, 158, 188);*/
+	/*color:#fff;*/
+	/*cursor: pointer;*/
+    /*-webkit-transition-duration: 0.7ms;*/
+         /*-o-transition-duration: 0.7ms;*/
+            /*transition-duration: 0.7ms;*/
+	/*min-width: 94px;*/
 }
 
 .produtos > div{
