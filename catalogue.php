@@ -8,7 +8,7 @@ require_once 'db/data.php';
         <div>
 
                 <?php foreach ($product as $id => $item) {
-                    if(array_key_exists('ART_CAT', $_GET) && $_GET['ART_CAT'] === $item[ART_CAT]){?>
+                    if(array_key_exists('ART_CAT', $_GET)){ if($_GET['ART_CAT'] === $item[ART_CAT]){?>
                     <h2><?= $item[ART_MODEL] ?></h2>
                     <img src="../images/<?= $item[ART_IMG] ?>" alt="photo">
                 <ul>
@@ -16,9 +16,9 @@ require_once 'db/data.php';
                     <li><?= $item[ART_KM] ?>"</li>
                     <li><?= $item[ART_PRICE] ?>"</li>
                 </ul>
-                <?php } else { ?>
+                <?php }} else { ?>
                         <h2><?= $item[ART_MODEL] ?></h2>
-                        <img src="images/<?= $item[ART_IMG] ?>" alt="photo">
+                        <img src="../images/<?= $item[ART_IMG] ?>" alt="photo">
                         <ul>
                             <li><?= $item[ART_YEAR] ?>"</li>
                             <li><?= $item[ART_KM] ?>"</li>
