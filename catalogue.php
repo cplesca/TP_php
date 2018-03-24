@@ -1,28 +1,24 @@
 <?php
-require_once 'db/data.php';
-
-?>
-<?php
 const PAGE_NAME = 'Catalogue';
 require_once('views/page_top.php');
+require_once 'db/data.php';
 ?>
     <main>
         <h1>Catalogue</h1>
-        <div class="row produtos2">
-            <div class="col-4" class="row produtos2">
+        <div>
 
-                <?php
+                <?php foreach ($product as $id => $item) { ?>
+                    <img src="images/<?= $item[ART_IMG] ?>" alt="photo">
+                <ul>
+                    <li><?= $item[ART_MODEL] ?></li>
+                    <li><?= $item[ART_YEAR] ?>"</li>
+                    <li><?= $item[ART_KM] ?>"</li>
+                    <li><?= $item[ART_PRICE] ?>"</li>
+                </ul>
+                <?php } ?>
 
-                foreach($category as $cle1 => $valeur1)
-                {
-                    echo "<h2>Categorie: " . $cle1 . "</h2><br />";
+        </div>
 
-                    foreach ($valeur1 as $cle2=>$valeur2)
-                    {
-                        echo  $valeur2 . "<br />\n";
-                    }
-                }
-                ?>
 
                <!----- <form action="/action_page.php" method="get">
                     <fieldset>
@@ -125,4 +121,5 @@ require_once('views/page_top.php');
         </div>
     </main>--->
 
-<?php require_once('views/page_bottom.php'); ?>
+<?php
+require_once('views/page_bottom.php');
