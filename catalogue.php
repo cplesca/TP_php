@@ -8,9 +8,9 @@ require_once 'db/data.php';
         <div>
 
                 <?php foreach ($product as $id => $item) { ?>
+                    <h2><?= $item[ART_MODEL] ?></h2>
                     <img src="images/<?= $item[ART_IMG] ?>" alt="photo">
                 <ul>
-                    <li><?= $item[ART_MODEL] ?></li>
                     <li><?= $item[ART_YEAR] ?>"</li>
                     <li><?= $item[ART_KM] ?>"</li>
                     <li><?= $item[ART_PRICE] ?>"</li>

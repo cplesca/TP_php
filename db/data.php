@@ -8,7 +8,6 @@ define('ART_YEAR','Année: ');
 define('ART_PRICE','Prix: ');
 
 
-
 $category = array(
     '1' => 'Berline',
     '2' => 'Hatchback',
@@ -26,7 +25,7 @@ $product = array(
     ),
 
     '12' => array(
-        ART_MODEL => "mercedes",
+        ART_MODEL => "Mercedes",
         ART_CAT => '1',
         ART_IMG => "c203.jpg",
         ART_KM => '100.000km',
@@ -34,7 +33,7 @@ $product = array(
         ART_PRICE => '19900$',
     ),
     '13' => array(
-        ART_MODEL => "toyota corola",
+        ART_MODEL => "Toyota Corola",
         ART_CAT => '1',
         ART_IMG => "corola.jpg",
         ART_KM => '100.000km',
@@ -42,7 +41,7 @@ $product = array(
         ART_PRICE => '19900$',
     ),
     '14' => array(
-        ART_MODEL => "hyunday elentra",
+        ART_MODEL => "Hyunday Elentra",
         ART_CAT => '1',
         ART_IMG => "elentra.jpg",
         ART_KM => '100.000km',
@@ -50,7 +49,7 @@ $product = array(
         ART_PRICE => '9900$',
     ),
     '15' => array(
-        ART_MODEL => "kia forte",
+        ART_MODEL => "Kia Forte",
         ART_CAT => '1',
         ART_IMG => "forte.jpg",
         ART_KM => '101.000km',
@@ -59,7 +58,7 @@ $product = array(
     ),
 
     '112' => array(
-        ART_MODEL => "honda civic",
+        ART_MODEL => "Honda Civic",
         ART_CAT => '2',
         ART_IMG => "civic.jpg",
         ART_KM => '115.000km',
@@ -67,7 +66,7 @@ $product = array(
         ART_PRICE => '10900$',
     ),
     '122' => array(
-        ART_MODEL => "mercedes class a",
+        ART_MODEL => "Mercedes Class A",
         ART_CAT => '2',
         ART_IMG => "classa.jpg",
         ART_KM => '125.000km',
@@ -75,7 +74,7 @@ $product = array(
         ART_PRICE => '24900$',
     ),
     '132' => array(
-        ART_MODEL => "toyota auris",
+        ART_MODEL => "Toyota Auris",
         ART_CAT => '2',
         ART_IMG => "auris.jpg",
         ART_KM => '140.000km',
@@ -83,7 +82,7 @@ $product = array(
         ART_PRICE => '10900$',
     ),
     '142' => array(
-        ART_MODEL => "hyunday accent",
+        ART_MODEL => "Hyunday Accent",
         ART_CAT => '2',
         ART_IMG => "accent.jpg",
         ART_KM => '118.000km',
@@ -91,7 +90,7 @@ $product = array(
         ART_PRICE => '7400$',
     ),
     '152' => array(
-        ART_MODEL => " kia rio",
+        ART_MODEL => " Kia Rio",
         ART_CAT => '2',
         ART_IMG => "rio.jgg",
         ART_KM => '112.000km',
@@ -99,7 +98,7 @@ $product = array(
         ART_PRICE => '6900$',
     ),
     '113' => array(
-        ART_MODEL => "honda crv",
+        ART_MODEL => "Honda CRV",
         ART_CAT => '3',
         ART_IMG => "crv.jpg",
         ART_KM => '135.000km',
@@ -108,7 +107,7 @@ $product = array(
 
     ),
     '123' => array(
-        ART_MODEL => "mercedes glk",
+        ART_MODEL => "Mercedes GLK",
         ART_CAT => '3',
         ART_IMG => "glk.jpg",
         ART_KM => '125.000km',
@@ -116,7 +115,7 @@ $product = array(
         ART_PRICE => '29900$',
     ),
     '133' => array(
-        ART_MODEL => "toyota rav4",
+        ART_MODEL => "Toyota Rav4",
         ART_CAT => '3',
         ART_IMG => "rav4.jpg",
         ART_KM => '160.000km',
@@ -124,7 +123,7 @@ $product = array(
         ART_PRICE => '14900$',
     ),
     '143' => array(
-        ART_MODEL => "hyunday tucson",
+        ART_MODEL => "Hyunday Tucson",
         ART_CAT => '3',
         ART_IMG => "tucson.jpg",
         ART_KM => '110.000km',
@@ -132,7 +131,7 @@ $product = array(
         ART_PRICE => '11900$',
     ),
     '153' => array(
-        ART_MODEL => "kia sol",
+        ART_MODEL => "Kia Sol",
         ART_CAT => '3',
         ART_IMG => "soul.jpg",
         ART_KM => '119.000km',
