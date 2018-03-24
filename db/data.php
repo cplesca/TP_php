@@ -6,12 +6,27 @@ define('ART_IMG','img');
 define('ART_KM','km');
 define('ART_YEAR','Année: ');
 define('ART_PRICE','Prix: ');
+define('CAT_NAME','catname');
+define('CAT_IMG','catimg');
+define('CAT_MSG','catmsg');
 
 
 $category = array(
-    '1' => 'Berline',
-    '2' => 'Hatchback',
-    '3' => 'Suv',
+    '1' => array(
+        CAT_NAME => 'Berline',
+        CAT_IMG => 'berline.jpg',
+        CAT_MSG => '1Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    ),
+    '2' => array(
+        CAT_NAME => 'Hatchback',
+        CAT_IMG => 'v-hatchback.jpg',
+        CAT_MSG => '2Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    ),
+    '3'  => array(
+        CAT_NAME => 'SUV',
+        CAT_IMG => 'v-vus.jpg',
+        CAT_MSG => '3Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    ),
 );
 
 $product = array(
