@@ -30,4 +30,4 @@ require_once 'db/data.php';
             </div>
     </main>
 
-<?php require_once('views/page_bottom.php');
+<?php require_once 'views/page_bottom.php';

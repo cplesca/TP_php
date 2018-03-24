@@ -1,6 +1,6 @@
 <?php
 const PAGE_NAME = 'Catalogue';
-require_once 'views/page_top.php';
+include_once 'views/page_top.php';
 require_once 'db/data.php';
 ?>
     <main>
@@ -31,4 +31,4 @@ require_once 'db/data.php';
     </main>
 
 <?php
-require_once 'views/page_bottom.php';
+include_once 'views/page_bottom.php';
