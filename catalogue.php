@@ -1,6 +1,6 @@
 <?php
 const PAGE_NAME = 'Catalogue';
-require_once('/views/page_top.php');
+require_once 'views/page_top.php';
 require_once 'db/data.php';
 ?>
     <main>
@@ -18,7 +18,7 @@ require_once 'db/data.php';
                 </ul>
                 <?php }} else { ?>
                         <h2><?= $item[ART_MODEL] ?></h2>
-                        <img src="../images/<?= $item[ART_IMG] ?>" alt="photo">
+                        <img src="images/<?= $item[ART_IMG] ?>" alt="photo">
                         <ul>
                             <li><?= $item[ART_YEAR] ?>"</li>
                             <li><?= $item[ART_KM] ?>"</li>
@@ -31,4 +31,4 @@ require_once 'db/data.php';
     </main>
 
 <?php
-require_once('views/page_bottom.php');
+require_once 'views/page_bottom.php';
