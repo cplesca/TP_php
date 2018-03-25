@@ -385,13 +385,13 @@ footer{
 }
 
 .side-menu {
-	background:#F7F7F7;
-	position:absolute;
-	top:0;
+	background:#ffffff;
+	position:fixed;
+	top:390px;
 	bottom:0;
-	height:100%;
+	height:147px;
 	left:0;
-	width:55px;
+	width:65px;
 	overflow:hidden;
 	-webkit-transition:width .2s linear;
 	transition:width .2s linear;
@@ -424,8 +424,8 @@ footer{
 	-webkit-transition:all .14s linear;
 	transition:all .14s linear;
 	font-family: 'Montserrat', sans-serif;
-	border-top:1px solid #f2f2f2;
-	text-shadow: 1px 1px 1px  #fff;
+	border-bottom:1px solid #f2f2f2;
+
 }
 
 .side-menu .nav-icon {
@@ -447,9 +447,6 @@ footer{
 	vertical-align:middle;
 	width:190px;
 	color: #262626;
-}
-
-.side-menu .share {
 }
 
 .side-menu .fb-like {
@@ -479,6 +476,7 @@ footer{
 side-menu a:hover,side-menu a:focus {
 	text-decoration:none;
 	border-left:0px solid #F7F7F7;
+	color: #ffffff;
 }
 
 .side-menu {
@@ -500,7 +498,7 @@ side-menu a:hover,side-menu a:focus {
 
 .darkerlishadow
 {
-	background-color:#ededed;
+	background-color:#ffffff;
 	text-transform:capitalize;
 	-webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
 	-moz-box-shadow:    inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
@@ -550,13 +548,13 @@ side-menu a:hover,side-menu a:focus {
 	padding-top: 50px;
 }
 
-#cat1{
+.cat1{
 	min-width: 240px;
 	margin-left: 0;
 	text-align: center;
 }
 
-#cat1 ul{
+.cat1 ul{
 	font-size: 13px;
 	font-weight: 300;
 	font-style: italic;
@@ -567,28 +565,8 @@ side-menu a:hover,side-menu a:focus {
 	-webkit-margin-end: 0;
 	-webkit-padding-start: 0;
 }
-#cat1 ul li {
+.cat1 ul li {
 	padding-bottom: 10px;
-}
-
-#cat2{
-	min-width: 240px;
-	margin-left: 0;
-}
-
-#cat2 ul{
-	font-size: 13px;
-	font-weight: 300;
-	font-style: italic;
-	padding-top: 10px;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
-	-webkit-margin-start: 0;
-	-webkit-margin-end: 0;
-	-webkit-padding-start: 0;
-}
-#cat2 ul li {
-	padding-bottom: 5px;
 }
 
 .button {
