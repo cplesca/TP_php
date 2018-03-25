@@ -77,9 +77,8 @@ if ($en_post) {
 
 
 ?>
-
-    <main>
-        <h1>Nous joindre</h1>
+    <h1>Nous joindre</h1>
+        <main>
         <div itemscope itemtype="http://schema.org/Store" id="wrapcontact" class="row">
             <div id="formdiv">
                 <form method="post">
