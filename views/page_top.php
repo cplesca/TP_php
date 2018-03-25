@@ -11,7 +11,7 @@ require_once (dirname(__FILE__) . '/../defines.php');
     <link rel="stylesheet" href="style/main.css" charset="utf-8"/>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script/main.js"></script>
+    <script src="script/mainscript.js"></script>
     <!--
         commentaire conditionnel pour rendre compatible les nouvelles balises structurantes de HTML5
     -->
@@ -24,5 +24,5 @@ require_once (dirname(__FILE__) . '/../defines.php');
 
 <header>
     <img id="logo" src="images/logo.png" alt="logo de l'entreprise" >
-    <?php require('menu.php'); ?>
+    <?php require_once 'menu.php'; ?>
 </header>

@@ -23,7 +23,7 @@ require_once 'db/data.php';
                 <?php foreach ($category as $id => $item) { ?>
                 <div class="col-4">
                     <h2><?= $item[CAT_NAME] ?></h2>
-                    <a href="catalogue.php/?ART_CAT=<?= $id ?>"><img src="images/<?= $item[CAT_IMG] ?>" alt="categorie"></a>
+                    <a href="catalogue.php?ART_CAT=<?= $id ?>"><img src="images/<?= $item[CAT_IMG] ?>" alt="categorie"></a>
                     <p> <?= $item[CAT_MSG] ?></p>
                 </div>
                 <?php } ?>

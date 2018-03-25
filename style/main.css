@@ -1,13 +1,13 @@
-/*css tp-nassim*/
-/*debut page d'accueil**/
+
+
 *{
 	box-sizing:border-box;
 	font-family: 'Montserrat', sans-serif;
 }
 article, aside, details, figcaption, figure, footer, header, main, nav, section 
 { display: block;
-}	
-
+}
+/*debut page d'accueil**/
 /*Système de grille*/
 	
 	.col-1 {width: 8.33%;}
