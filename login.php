@@ -1,5 +1,5 @@
 <?php
-const PAGE_NAME = 'Login';
+const PAGE_NAME1 = 'Login';
 require_once('views/page_top.php');
 require_once 'function/loginout.php';
 ?>

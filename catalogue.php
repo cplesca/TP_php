@@ -3,6 +3,14 @@ const PAGE_NAME = 'Catalogue';
 require_once  'views/page_top.php';
 require_once 'db/data.php';
 require_once 'views/sidemenu.php';
+require_once 'function/loginout.php';
+
+if(array_key_exists('item_id', $_POST)){
+    if(!user_is_logged()){
+        require_once "login.php";
+    }
+}
+
 ?>
 
 
