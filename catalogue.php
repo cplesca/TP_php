@@ -39,7 +39,7 @@ require_once 'views/sidemenu.php';
                 </ul>
                 <form method="post" class="">
                     <input type="hidden" name="item_id" value="<?= $id ?>" />
-                    <button type="submit" class="button" name="" value="">Ajouter à votre liste d'envies
+                    <button type="submit" class="button"name="<?= CART_OP ?>" value="<?= CART_OP_ADD ?>">Ajouter à votre liste d'envies
                     </button>
                 </form>
             </div>

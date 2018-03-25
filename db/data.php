@@ -10,6 +10,8 @@ define('CAT_NAME','catname');
 define('CAT_IMG','catimg');
 define('CAT_MSG','catmsg');
 define('CAT_IMG2','catimg2');
+define('CART_OP','cartop');
+define('CART_OP_ADD','cartopadd');
 
 
 $category = array(
