@@ -110,6 +110,13 @@ span.grey {
 	border-bottom: 2px solid #fff;
 }
 
+#main-menu ul li a:link{
+	color: #262626;
+}
+#main-menu ul li a:visited{
+	color: #262626;
+}
+
 #main-menu a:hover{
 	color:#619ebc !important;
 	border-bottom: 2px solid #619ebc;
@@ -119,10 +126,6 @@ span.grey {
 #main-menu a:active{
 	color:#9d9d9d !important;
 	border-bottom: 2px solid #9d9d9d;
-}
-
-#main-menu a:visited { 
-    color: #262626;
 }
 
 main {
