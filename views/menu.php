@@ -1,5 +1,11 @@
 <?php
 require_once (dirname(__FILE__) . '/../defines.php');
+
+session_start();
+if ( ! array_key_exists(NB_WISH, $_SESSION)) {
+    $_SESSION[NB_WISH] = 0;
+}
+
 ?>
 
 <div id="wrapmenu">
@@ -16,10 +22,8 @@ require_once (dirname(__FILE__) . '/../defines.php');
             </li>
         </ul>
     </nav>
-    <div>
-        <figure>
-            <a href="login.php" id="logo"><img src="images/favorite" alt="favorite"/></a>
-            <a href="login.php" id="logo"><img src="images/loginicon.png" alt="se connecter"/></a>
-        </figure>
+    <div id="starlogo"">
+        <a href="login.php" id="logo"><img src="images/favorite" alt="favorite"/><span class="grey"><?= $_SESSION[NB_WISH] ?></span></a>
+        <a href="login.php" id="logo"><img src="images/loginicon.png" alt="se connecter"/></a>
     </div>
 </div>

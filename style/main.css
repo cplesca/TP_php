@@ -65,6 +65,28 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+#starlogo a:first-child{
+	margin-right: 10px;
+	text-decoration: none;
+	color:#262626;
+}
+
+span.grey {
+	background: rgb(97, 158, 188);
+	border-radius: 0.8em;
+	-moz-border-radius: 0.8em;
+	-webkit-border-radius: 0.8em;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-right: 15px;
+	text-align: center;
+	width: 1.6em;
+
+}
+
 #main-menu{
 	margin:auto;
 }
@@ -747,7 +769,11 @@ form{
 
 #loginoutform{
 	padding-top: 50px;
-	padding-bottom: 100px;
+	padding-bottom: 236px;
+}
+
+#loginoutform #formdiv {
+	width: 50%;
 }
 
 #formdiv input[type=submit]:hover {
