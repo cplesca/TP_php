@@ -23,7 +23,7 @@ if ( ! array_key_exists(NB_WISH, $_SESSION)) {
         </ul>
     </nav>
     <div id="starlogo"">
-        <a href="login.php" id="logo"><img src="images/favorite" alt="favorite"/><span class="grey"><?= $_SESSION[NB_WISH] ?></span></a>
+        <a href="login.php" id="logo"><img src="images/favorite.png" alt="favorite"/><span class="grey"><?= $_SESSION[NB_WISH] ?></span></a>
         <a href="login.php" id="logo"><img src="images/loginicon.png" alt="se connecter"/></a>
     </div>
 </div>
