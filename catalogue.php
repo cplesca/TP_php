@@ -5,11 +5,24 @@ require_once 'db/data.php';
 require_once 'views/sidemenu.php';
 require_once 'function/loginout.php';
 
-if(array_key_exists('item_id', $_POST)){
+
+if(array_key_exists('item_id', $_GET)){
     if(!user_is_logged()){
         require_once "login.php";
     }
+}elseif ( ! array_key_exists(NB_WISH, $_SESSION)) {
+    $_SESSION[NB_WISH] = 0;
+    if ( ! array_key_exists(IDPROD, $_SESSION)) {
+        $_SESSION[IDPROD] = 0;
+    }
 }
+
+if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
+    $_SESSION[NB_WISH]++;
+    $_SESSION[IDPROD] = $_GET[IDPROD];
+}
+
+
 
 ?>
 
@@ -28,12 +41,8 @@ if(array_key_exists('item_id', $_POST)){
                     <li><?= ART_KM.$item[ART_KM] ?></li>
                     <li><?= ART_PRICE.$item[ART_PRICE] ?></li>
                 </ul>
-                <form method="post" id="form3" class="">
-                    <input type="hidden" name="item_id" value="<?= $id ?>" />
-                    <button type="submit" class="button" name="" value="">Ajouter à votre liste d'envies
-                    </button>
-                </form>
-            </div>
+                <a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" class="button">Ajouter à votre liste d'envies</a>
+                            </div>
                 <?php }
                     }
                     else { ?>
@@ -45,12 +54,8 @@ if(array_key_exists('item_id', $_POST)){
                     <li><?= ART_KM.$item[ART_KM] ?></li>
                     <li><?= ART_PRICE.$item[ART_PRICE]?></li>
                 </ul>
-                <form method="post" class="">
-                    <input type="hidden" name="item_id" value="<?= $id ?>" />
-                    <button type="submit" class="button"name="<?= CART_OP ?>" value="<?= CART_OP_ADD ?>">Ajouter à votre liste d'envies
-                    </button>
-                </form>
-            </div>
+                <a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" class="button">Ajouter à votre liste d'envies</a>
+             </div>
                  <?php  } }?>
         </div>
     </main>

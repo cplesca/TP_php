@@ -12,7 +12,12 @@ define('CAT_MSG','catmsg');
 define('CAT_IMG2','catimg2');
 define('CART_OP','cartop');
 define('CART_OP_ADD','cartopadd');
-
+define('OP_NAME', 'op');
+define('OP_AJOUT', 'add');
+define('OP_RETRAIT', 'suppr');
+define('OP_MAZ', 'reset');
+define('NB_WISH', 'Total');
+define('IDPROD', 'Produit');
 
 $category = array(
     '1' => array(
