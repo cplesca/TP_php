@@ -745,7 +745,10 @@ form{
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+#pinde{
+	text-align: center;
+	padding-bottom: 30px;
+}
 #formdiv input[type=submit] {
     width: 40%;
     background-color:rgb(97, 158, 188);

@@ -23,19 +23,19 @@ $category = array(
     '1' => array(
         CAT_NAME => 'Berline',
         CAT_IMG => 'berline.jpg',
-        CAT_MSG => '1Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        CAT_MSG => 'Les 5 meilleures berlines familiales.',
         CAT_IMG2 => 'berline.png',
     ),
     '2' => array(
         CAT_NAME => 'Hatchback',
         CAT_IMG => 'v-hatchback.jpg',
-        CAT_MSG => '2Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        CAT_MSG => 'Découvrez nos différents modèles.',
         CAT_IMG2 => 'hatchback.png',
     ),
     '3'  => array(
         CAT_NAME => 'SUV',
         CAT_IMG => 'v-vus.jpg',
-        CAT_MSG => '3Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        CAT_MSG => 'Top 5 des SUV les plus populaires au Québec.',
         CAT_IMG2 => 'suv.png',
     ),
 );

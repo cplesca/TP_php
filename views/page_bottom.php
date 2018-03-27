@@ -5,9 +5,9 @@
     <div id="divfoot">
         <nav>
             <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="catalogue.php">Products</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="catalogue.php">Catalogue</a></li>
+                <li><a href="contact.php">Contactez-nous</a></li>
             </ul>
         </nav>
         <div id="socialmediafoot" class="row">
@@ -29,10 +29,10 @@
                 </li>
             </ul>
         </div>
-        <p><span class="rouge">Tel.:</span> 438 259-5696<br>
-            <span class="rouge">Fax:</span> 514 236-0855<br>
-            <span class="rouge">Email:</span> info@autoplus.com<br>
-            <span class="rouge">Adresse:</span> 9657 Parthenais, H1TU4R Montréal</span><br><br>
+        <p><span class="rouge">Tel.:</span> 514 842-2426<br>
+            <span class="rouge">Fax:</span> 514 842-2426<br>
+            <span class="rouge">Email:</span> info@isi-mtl.com<br>
+            <span class="rouge">Adresse:</span> 255 Cremazie Blvd. East, suite 100, Montreal (Quebec) H2M 1M2</span><br><br>
             <small>Auto plus &copy; 2018<br>*ce projet est realiser pour fin d'études*</small></p>
 
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/go-to-the-top.png" alt="back to top button"></button>
