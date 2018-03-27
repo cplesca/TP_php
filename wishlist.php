@@ -25,46 +25,18 @@ require_once 'views/page_top.php';
     </div>
 
     <?php }
-    else
-    {
-        if (! array_key_exists(NB_WISH, $_SESSION)) {
-            $_SESSION[NB_WISH] = "0";
-        }
-
- /*   if (array_key_exists(OP_NAME, $_GET)) {
-        switch ($_GET[OP_NAME]) {
-            case OP_RETRAIT:
-                if ($_SESSION[NB_WISH] > 0) {
-                $_SESSION[NB_WISH]--;
-            }
-            break;
-        case OP_MAZ:
-            $_SESSION[NB_WISH] = 0;
-            break;
-        }
-
-    } else { */ ?>
+    else {  ?>
         <div id="formdiv">
             <div id="filds">
-
-                <?php foreach ($product as $id  => $item) {
-                foreach ($_SESSION[SESS_WISHLIST] as $idwl => $itemwl) {
-                    if($itemwl === (string)$id){                    ?>
-                    <div class="col-4">
-                        <h2>Liste d'envies</h2>
-                        <ul>
-                            <li><?= $item[ART_MODEL] ?> <a href=""><span class="grey">X</span></a> </li>
-                        </ul>
-
-            </div>
-
-
-                <?php }} } ?>
-                <form method="post" name="logout">
-                    <input id="btnconnecter" type="submit" name="logout_submit" value="Se déconnecter"/>
-                </form>
-            </div>
+                <div class="col-4">
+                    <h2>Liste d'envies</h2>
+                        <?php foreach ($product as $id  => $item) {
+                            foreach ($_SESSION[SESS_WISHLIST] as $idwl => $itemwl) {
+                                if($itemwl === (string)$id){ ?>
+                                 <p><?= $item[ART_MODEL] ?> <a href=" <?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_RETRAIT, '&' , IDPROD, '=', $id ?>"><span class="grey">X</span>
+                                     </a> </p>
+                                <?php }} }} ?>
+                </div>
+             </div>
         </div>
 
-    <?php } ?>
-</div>
