@@ -2,6 +2,9 @@
 define('CHECKED_ATTR',          'checked="checked"');
 define('SELECTED_ATTR',          'selected="selected"');
 const PAGE_NAME = 'Contact';
+require_once 'db/data.php';
+require_once 'function/wishlist.php';
+require_once 'function/loginout.php';
 require_once('views/page_top.php');
 
 $en_post = $_SERVER ['REQUEST_METHOD'] === 'POST';

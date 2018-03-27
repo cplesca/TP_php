@@ -1,16 +1,9 @@
 <?php
 const PAGE_NAME = 'Catalogue';
-require_once  'views/page_top.php';
 require_once 'db/data.php';
-require_once 'views/sidemenu.php';
 require_once 'function/loginout.php';
 
-
-if(array_key_exists('item_id', $_GET)){
-    if(!user_is_logged()){
-        require_once "login.php";
-    }
-}elseif ( ! array_key_exists(NB_WISH, $_SESSION)) {
+if ( ! array_key_exists(NB_WISH, $_SESSION)) {
     $_SESSION[NB_WISH] = 0;
     if ( ! array_key_exists(IDPROD, $_SESSION)) {
         $_SESSION[IDPROD] = 0;
@@ -18,10 +11,16 @@ if(array_key_exists('item_id', $_GET)){
 }
 
 if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
-    $_SESSION[NB_WISH]++;
-    $_SESSION[IDPROD] = $_GET[IDPROD];
+    if(!user_is_logged()){
+        header("Location: login.php");
+    }else{
+        $_SESSION[NB_WISH]++;
+        $_SESSION[IDPROD] = $_GET[IDPROD];
+    }
 }
-
+require_once 'function/wishlist.php';
+require_once  'views/page_top.php';
+require_once 'views/sidemenu.php';
 
 
 ?>

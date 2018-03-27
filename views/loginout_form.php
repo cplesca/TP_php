@@ -23,39 +23,13 @@ require_once 'function/loginout.php';
 
     </div>
 
-    <?php } else
-    {if (! array_key_exists(NB_WISH, $_SESSION)) {
-        $_SESSION[NB_WISH] = "0";
-    }
-
-    if (array_key_exists(OP_NAME, $_GET)) {
-        switch ($_GET[OP_NAME]) {
-            case OP_RETRAIT:
-                if ($_SESSION[NB_WISH] > 0) {
-                $_SESSION[NB_WISH]--;
-            }
-            break;
-        case OP_MAZ:
-            $_SESSION[NB_WISH] = 0;
-            break;
-    }
-
- } else { ?>
+    <?php } else { ?>
         <div id="formdiv">
-            <div id="filds">
-                <?php foreach ($product as $id  => $item) {
-                    if($_SESSION[IDPROD] === (string)$id){                    ?>
-                    <div class="col-4">
-                        <h2><?= $item[ART_MODEL] ?></h2>
-            </div>
-
-
-                <?php } } ?>
                 <form method="post" name="logout">
                     <input id="btnconnecter" type="submit" name="logout_submit" value="Se déconnecter"/>
                 </form>
             </div>
         </div>
 
-    <?php }} ?>
+    <?php }?>
 </div>
